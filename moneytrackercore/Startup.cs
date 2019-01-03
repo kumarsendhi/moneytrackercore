@@ -26,7 +26,7 @@ namespace moneytrackercore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<moneytrackercoreDbContext>(options => options.UseSqlServer(_configuration.GetConnectionString("moneytrackercore")));
-            services.AddScoped<IMoneyTrackerCore, SqlMoneyTrackerCore>();
+            services.AddScoped<IUserRepository, SqlUserRepository>();
             services.AddMvc();
         }
 
