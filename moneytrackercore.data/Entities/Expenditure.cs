@@ -14,6 +14,6 @@ namespace moneytrackercore.data.Entities
         public decimal AmountSpent { get; set; }
         public string Comment { get; set; }
 
-        public ICollection<Incomes> Incomes { get; set; }
+        //public ICollection<Incomes> Incomes { get; set; }
     }
 }

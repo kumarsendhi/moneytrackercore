@@ -9,7 +9,7 @@ namespace moneytrackercore.Data
 {
     public class moneytrackercoreDbContext : DbContext
     {
-        public moneytrackercoreDbContext(DbContextOptions options) :base()
+        public moneytrackercoreDbContext(DbContextOptions options) : base(options)
         {
 
         }
